@@ -1,0 +1,2 @@
+.delighter.at-galleryCard { opacity: 0; transform: translatey(-10%); }
+.delighter.started.at-galleryCard { opacity: 1; transform: none; transition: all .5s ease-out .1s; }
