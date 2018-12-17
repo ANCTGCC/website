@@ -90,14 +90,27 @@ body{
       #at-Gallery{
         font-size: 5em;
         position: relative;
-        color: black;
-        line-height: 1.4;
-        -webkit-box-reflect: below -10px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0) 10%,rgba(0, 0, 0, 0.6));
+        display: inline-block;
+        margin-bottom: 1em;
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: -15px;
+          display: inline-block;
+          width: 60px;
+          height: 5px;
+          left: 50%;
+          -moz-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          background-color: black;
+          border-radius: 2px;
+}
       }
       // "Gallery" subTitle
       #at-GallerySub{
-        margin-top: 5em;
-        font-weight: 600;
+
       }
       // contents
       .at-gallery{
